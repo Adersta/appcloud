@@ -2,14 +2,17 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$a=$GET['AÑO'];
+$b=$GET['ESTACIÓN'];
+
 $client = new MongoDB\Client(
     'mongodb+srv://Daniel:12342234@cluster0.y2xfg.mongodb.net/MultimediaS?retryWrites=true&w=majority');
  
 $tb=$client->lluvia->Precipitacion;
 $filter= ['$and'=>
             [
-                ['AÑO'=>['$eq'=>'1997']],
-                ['ESTACIÓN'=>['$eq'=>'Sutatausa']]
+                ['AÑO'=>['$eq'=>$a]],
+                ['ESTACIÓN'=>['$eq'=>$b]]
             ]
         ];
  
