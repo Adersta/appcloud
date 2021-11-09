@@ -1,5 +1,7 @@
 <?php 
 
-echo "hello world";
+$arr = array("envio"=>"daniel","mensaje"=>"bienvenido");
+
+echo json_encode($arr);
 
 ?>
