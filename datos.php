@@ -5,7 +5,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $client = new MongoDB\Client(
     'mongodb+srv://Daniel:12342234@cluster0.y2xfg.mongodb.net/MultimediaS?retryWrites=true&w=majority');
  
-$tb=$client->water->Precipitaciones;
+$tb=$client->lluvia->Precipitacion;
 $filter= ['$and'=>
             [
                 ['ANNO'=>['$eq'=>'1997']],
