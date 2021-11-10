@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$a=$GET['anno'];
-$b=$GET['represa'];
+$a=$_GET['anno'];
+$b=$_GET['represa'];
 
 $client = new MongoDB\Client(
     'mongodb+srv://Daniel:12342234@cluster0.y2xfg.mongodb.net/MultimediaS?retryWrites=true&w=majority');
