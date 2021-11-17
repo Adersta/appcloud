@@ -13,7 +13,7 @@ $tb=$client->telefonia->telefonia;
 $filter= ['$and'=>
             [
                 ['AÑO'=>['$eq'=>$a]],
-                ['PROVEEDOR'=>['$eq'=>$b]]
+                ['PROVEEDOR'=>['$eq'=>$b]],
                 ['SEGMENTO'=>['$eq'=>$c]]
             ]
         ];
